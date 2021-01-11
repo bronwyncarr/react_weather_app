@@ -23,7 +23,7 @@ This app is built with:
 
 So far the app allows users to search for a city to see they weather there.
 
-![Stage One](.docs/weather.gif)
+![Stage One](./docs/weather.gif)
 
 ## 🚧 Under Construction
 
