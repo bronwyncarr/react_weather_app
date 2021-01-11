@@ -1,7 +1,7 @@
 import { WeatherInfo, WeatherText, WeatherPic } from "./../Styled.js";
 import Time from './Time'
 
-function Weather({ weather }) {
+function Weather({ weather, location }) {
   // If weather is not defined this line will log a notification
   if (!weather) {
     console.log("No weather information reported")
@@ -10,17 +10,17 @@ function Weather({ weather }) {
   console.log(weather)
 
   // If weather is not null
-  const { temperature, weather_descriptions, weather_icons, observation_time } = weather;
+  const { temperature, weather_descriptions, weather_icons } = weather;
   return (
     <>
     <WeatherInfo>
       <WeatherPic src={weather_icons} alt={weather_descriptions} />
       <WeatherText>
-        <p>Temperature: <strong>{temperature}</strong> C.</p>
+        <p>Temperature: <strong>{temperature}</strong> C</p>
         <p>{weather_descriptions}</p>
       </WeatherText>
     </WeatherInfo>
-    <Time time={observation_time}/>
+    <Time location={location}/>
     </>
   );
 }

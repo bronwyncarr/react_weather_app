@@ -5,6 +5,7 @@ import Weather from "./components/Weather";
 
 function App() {
   const [weather, setWeather] = useState(null);
+  const [location, setLocation] = useState({})
 
   const handleClick = async () => {
     try {
@@ -13,6 +14,7 @@ function App() {
       );
       const data = await res.json();
       setWeather(data.current);
+      setLocation(data.location);
     } catch (e) {
       console.log(`Sorry an error occured: ${e}`);
     }
@@ -20,11 +22,10 @@ function App() {
 
   return (
     <Container>
-      <Heading>WEATHER APP</Heading>
+      <Heading>FOUR SEASONS IN ONE DAY</Heading>
       <Info>
-        <h2>Melbourne</h2>
         <Button onClick={handleClick}>Get Melbourne weather</Button>
-        {weather && <Weather weather={weather} />}
+        {weather && <Weather weather={weather} location={location} />}
       </Info>
     </Container>
   );
