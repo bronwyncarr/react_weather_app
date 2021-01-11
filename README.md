@@ -12,12 +12,12 @@ I plan to use Jest for testing to get some practise using it in a basic applicat
 
 ## 🛠 Stack
 This app is built with:
+
 - React
--styled-components
--Jest
+- styled-components
+- Jest
 
 ## 🚧 Under Construction
 
 This app is still being built...
-...Stay tuned! 
-
+...Stay tuned!
