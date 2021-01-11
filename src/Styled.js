@@ -27,9 +27,20 @@ export const WeatherInfo = styled.div `
   font-family: 'Roboto';
   font-size: 1.5rem;
   display: flex;
-  justify-content: space-evenly;
-`
+  justify-content: between;
+  margin-top: 2rem;
+  `
+  
+  export const Button = styled.button `
+    font-size: 1.5rem;
+    padding: 1rem;
+  `
 
+export const WeatherPic = styled.img `
+  width: 150px;
+  margin: 0;
+  padding-right: 2rem;
+`
 export const WeatherText = styled.div `
 
 `
