@@ -22,11 +22,10 @@ export const Heading = styled.h1`
   font-size: 4rem;
 `;
 
-export const WeatherInfo = styled.div`
+export const WeatherDisplay = styled.div`
   font-size: 1.5rem;
   display: flex;
   justify-content: between;
-  margin-top: 2rem;
 `;
 
 export const Button = styled.button`
@@ -39,4 +38,19 @@ export const WeatherPic = styled.img`
   margin: 0;
   padding-right: 2rem;
 `;
+
 export const WeatherText = styled.div``;
+
+export const Form = styled.form`
+  margin-bottom: 2rem; 
+  color: #fff;
+  font-size: 1.5rem;
+`;
+
+export const Label = styled.label`
+  padding-right: 1rem;
+`;
+
+export const Input = styled.input`
+  padding: 0.5rem;
+`;
