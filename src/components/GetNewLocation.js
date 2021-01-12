@@ -8,8 +8,17 @@ function GetNewLocation({ handleSubmit }) {
     setUserLocation(e.target.value);
   };
 
+  const clearInput = () => {
+    setUserLocation("");
+  };
+
   return (
-    <Form onSubmit={(e) => handleSubmit(e, userLocation)}>
+    <Form
+      onSubmit={(e) => {
+        handleSubmit(e, userLocation);
+        clearInput();
+      }}
+    >
       <Label>Please enter a city:</Label>
       <Input
         type="text"

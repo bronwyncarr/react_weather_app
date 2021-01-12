@@ -23,7 +23,7 @@ function App() {
 
   return (
     <Container>
-      <Heading>FOUR SEASONS IN ONE DAY</Heading>
+      <Heading>WHATEVER THE WEATHER</Heading>
       <GetNewLocation handleSubmit={handleSubmit} />
       {weather && <Weather weather={weather} location={location} />}
     </Container>
