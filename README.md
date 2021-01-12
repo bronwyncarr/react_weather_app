@@ -28,4 +28,5 @@ So far the app allows users to search for a city to see they weather there.
 ## 🚧 Under Construction
 
 This app is still being built...
+
 ...Stay tuned!

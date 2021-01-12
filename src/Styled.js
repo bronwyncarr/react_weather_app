@@ -39,10 +39,8 @@ export const WeatherPic = styled.img`
   padding-right: 2rem;
 `;
 
-export const WeatherText = styled.div``;
-
 export const Form = styled.form`
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
   color: #fff;
   font-size: 1.5rem;
 `;
