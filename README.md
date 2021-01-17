@@ -27,6 +27,6 @@ So far the app allows users to search for a city to see they weather there.
 
 ## 🚧 Under Construction
 
-This app is still being built...
+This app displays MVP.
 
-...Stay tuned!
+In the future, I would like to add geolocation functionality to show the weather for the users location when the app first loads. 
